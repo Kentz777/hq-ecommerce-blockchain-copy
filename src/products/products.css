@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.product_header {
+width: 100%;
+display: flex;	
+background-color: black;
+color:white;
+padding: 0 25px;
+margin-bottom: 50px;
+}
+
+.product_header h1{
+	display: inherit;
+	align-items: center;
+	justify-content: left;
+text-align:left;
+font-size: 30px;
+}
+.product_header .filters input{
+height: 35px;
+margin: 20px 0;
+margin-left: 20px;
+}
+.product_header .filters select{
+height: 35px;
+margin: 20px 0;
+padding: 5px;
+}
+
+.filters{
+width: 90%;
+display: flex;
+align-items: center;
+justify-content: end;
+
+}
+
+.product_description{
+	text-align: left;
+	padding-top: 20px;
+}
+
+
+
+.products{
+  width: 90%;
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.52), rgba(243, 243, 243, 0.25)),
+    url('/public/building.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  margin-top: 110px;
+  }
+  
+  .column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 20px;
+  border: 3px solid black;
+}
+  
+  .card img{
+ width: 120px;
+ height:210px;
+}
+  
+  .navbar{
+    width: 100%;
+    margin:auto;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+	background: #292C35;
+	
+  }
+  
+  .navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  }
+  
+  .navbar ul li a{
+  text-decoration: none;
+  color:#fff;
+  text-transform: uppercase;
+  }
+  
+  .navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+  }
